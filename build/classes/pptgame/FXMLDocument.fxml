@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="564.0" prefWidth="713.0" style="-fx-background-color: purple;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pptgame.FXMLDocumentController">
+   <children>
+      <Label fx:id="titleGame" alignment="CENTER" contentDisplay="RIGHT" layoutX="73.0" layoutY="59.0" prefHeight="96.0" prefWidth="568.0" text="Pedra, Papel, Tesoura!" textAlignment="CENTER" textFill="#d7ae0c">
+         <font>
+            <Font size="44.0" />
+         </font>
+      </Label>
+      <HBox layoutX="245.0" layoutY="192.0" prefHeight="39.0" prefWidth="224.0">
+         <children>
+            <Button fx:id="pedra" mnemonicParsing="false" onAction="#clicouPedra" prefHeight="39.0" prefWidth="79.0" text="Pedra" />
+            <Button fx:id="papel" mnemonicParsing="false" onAction="#clicouPapel" prefHeight="40.0" prefWidth="82.0" text="Papel" />
+            <Button fx:id="tesoura" mnemonicParsing="false" onAction="#clicouTesoura" prefHeight="41.0" prefWidth="82.0" text="Tesoura" />
+         </children>
+      </HBox>
+      <Label fx:id="wins" alignment="CENTER" layoutX="252.0" layoutY="438.0" prefHeight="57.0" prefWidth="210.0" text="Vitórias: 0" textAlignment="CENTER" textFill="#f2bc0c">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <Label fx:id="relatorio" alignment="CENTER" layoutX="182.0" layoutY="282.0" prefHeight="146.0" prefWidth="350.0" text="Relatório" textAlignment="CENTER" textFill="#07c0ee" underline="true">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
